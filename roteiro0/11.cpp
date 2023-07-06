@@ -9,17 +9,16 @@ int main(void) {
     int achou[110];
 
     int pos = 0;
-    while (!cin.eof()) {
+    while (cin >> n) {
         int valor = 0;
         achou[pos] = 0;
 
-        cin >> n;
         if (n == 1) {
             cin >> valor;
             nums_ganhadores[pos] = valor;
             achou[pos] = 1;
             pos++;
-        } else {
+        } else if (n != 0) {
             int soma = 0;
             for (int i = 0; i < n; i++) {
                 cin >> valor;
