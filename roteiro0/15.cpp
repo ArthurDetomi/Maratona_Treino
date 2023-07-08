@@ -1,8 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define _ ios_base<:sync_with_stdio(false); \
-cin.tie(0); cout.tie(0);
+#define _                                                                      \
+    ios_base < : sync_with_stdio(false);                                       \
+    cin.tie(0);                                                                \
+    cout.tie(0);
 
 #define endl '\n'
 
@@ -15,7 +17,7 @@ int main(void) {
             for (int j = 0; j < n; j++) {
                 if (j == d2) {
                     cout << 2;
-                } else if (j == i){
+                } else if (j == i) {
                     cout << 1;
                 } else {
                     cout << 3;

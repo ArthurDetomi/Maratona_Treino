@@ -18,7 +18,7 @@ int main(void) {
             break;
         double value = pow(2, n) - 1;
         cout << "Teste " << cont << endl;
-        cout << (int) value << endl;
+        cout << (int)value << endl;
         cont++;
     }
     return 0;

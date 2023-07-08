@@ -4,8 +4,10 @@ using namespace std;
 
 #define endl '\n'
 
-#define _ ios_base<:sync_with_stdio(false); \
-cin.tie(0); cout.tie(0);
+#define _                                                                      \
+    ios_base < : sync_with_stdio(false);                                       \
+    cin.tie(0);                                                                \
+    cout.tie(0);
 
 int main(void) {
     int n, r;
@@ -13,7 +15,7 @@ int main(void) {
     while (cin >> n >> r) {
         vector<bool> vivos(n + 1, false);
         int id;
-        
+
         for (int i = 0; i < r; i++) {
             cin >> id;
             vivos[id] = true;
@@ -30,4 +32,4 @@ int main(void) {
         }
         cout << endl;
     }
-} 
+}

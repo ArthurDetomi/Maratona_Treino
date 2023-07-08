@@ -12,7 +12,7 @@ int main(void) {
         cin >> x;
         soma += x;
     }
-    
+
     cout << soma << endl;
     return 0;
 }

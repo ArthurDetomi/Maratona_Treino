@@ -5,10 +5,11 @@ using namespace std;
 int main(void) {
     int r, rodada[1000];
     int soma1 = 0, soma2 = 0, cont = 0;
-    
+
     while (1) {
         cin >> r;
-        if (r == 0) break;
+        if (r == 0)
+            break;
         int a, b;
         for (int i = 0; i < r; i++) {
             cin >> a >> b;
@@ -19,7 +20,7 @@ int main(void) {
             rodada[cont] = 1;
         } else {
             rodada[cont] = 2;
-        }   
+        }
         cont++;
         soma1 = soma2 = 0;
     }

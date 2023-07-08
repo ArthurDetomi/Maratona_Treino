@@ -14,8 +14,9 @@ int main() {
         int valor1, valor2;
 
         cin >> qtd_r;
-        if (qtd_r == 0) break;
-        
+        if (qtd_r == 0)
+            break;
+
         rodada[cont] = qtd_r;
 
         cin >> nomeA;
@@ -30,7 +31,7 @@ int main() {
             pos++;
         }
         cont++;
-    }  
+    }
 
     int pos_aux = 0;
     for (int i = 0; i < cont; i++) {

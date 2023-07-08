@@ -26,7 +26,7 @@ int main(void) {
             somas_colunas[j] += qtd;
             soma += qtd;
         }
-        if (soma >  maior) {
+        if (soma > maior) {
             maior = soma;
         }
     }

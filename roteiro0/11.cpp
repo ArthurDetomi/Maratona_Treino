@@ -30,8 +30,6 @@ int main(void) {
             }
             pos++;
         }
-
-       
     }
 
     for (int i = 0; i < pos; i++) {
