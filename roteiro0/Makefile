@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -Wall -Wextra
+CFLAGS = -g -Wall -Wextra
 
 %: %.cpp
 	$(CC) $(CFLAGS) -o $@.out $<
