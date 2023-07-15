@@ -1,4 +1,5 @@
 **/*.out
+**/*.txt
 curso_cpp/*.out
 independente/*.out
 .idea/
