@@ -13,22 +13,23 @@ int main(void) {
             break;
         }
 
-        char tam = (int)n.size();
+        string result;
+
+        int tam = (int)n.size();
         for (int i = 0; i < tam; i++) {
-            if (n[i] == d) {
-                n.erase(i, 1);
-                i--;
+            if (n[i] != d) {
+                result += n[i];
             }
         }
 
-        while (n[0] == '0') {
-            n.erase(0, 1);
+        while (result[0] == '0') {
+            result.erase(0, 1);
         }
 
-        if (n.empty() == true) {
+        if (result.empty() == true) {
             cout << 0 << endl;
         } else {
-            cout << n << endl;
+            cout << result << endl;
         }
     }
     return 0;
