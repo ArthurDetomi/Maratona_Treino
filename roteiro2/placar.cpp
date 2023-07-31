@@ -14,16 +14,16 @@ int main(void) {
 
     int cont = 1;
     while (cin >> n) {
-        vector<pair<string, int>> alunos;
+        vector<pair<string, int>> alunos(n);
 
         pair<string, int> tmp;
         for (int i = 0; i < n; i++) {
             cin >> tmp.first >> tmp.second;
-            alunos.push_back(tmp);
+            alunos[i] = tmp;
         }
 
         sort(alunos.begin(), alunos.end(), comp);
 
-        printf("Instancia %d\n%s\n", cont++, alunos.back().first.c_str());
+        printf("Instancia %d\n%s\n", cont++, alunos[n - 1].first.c_str());
     }
 }
