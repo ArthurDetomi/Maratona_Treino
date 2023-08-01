@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// Solução não passa
 int main(void) {
     long long n, q;
     scanf("%lld %lld", &n, &q);
