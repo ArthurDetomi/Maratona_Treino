@@ -7,7 +7,7 @@ struct Pos {
     int c;
 }
 
-vector<Pos> get_vizinhos(Pos p;) {
+vector<Pos> get_vizinhos(Pos p) {
     return {{p.l, p.c - 1}, {p.l - 1, p.c}, {p.l, p.c + 1}, {p.l + 1, p.c}};
 }
 
@@ -22,7 +22,7 @@ bool buscar(vector<string> &mat, Pos atual, Pos dest) {
     if (atual.l == dest.l && atual.c == dest.c) {
         return true;
     }
-    if (mat[atual.l][atual.c] != ' ') {
+    if (mat[atual.l][atual.c] != '_') {
         return false;
     }
     mat[atual.l][atual.c] != '.';
@@ -55,11 +55,11 @@ int main(void) {
     for (int l = 0; l < nl; l++) {
         for (int c = 0; c < nc ; c++) {
             if (mat[l][c] == 'I') {
-                mat[l][c] = ' ';
+                mat[l][c] = '_';
                 inicio = Pos {l, c};
             }
             if (mat[l][c] == 'F') {
-                mat[l][c] = ' ';
+                mat[l][c] = '_';
                 fim = Pos {l, c};
             }
         }
