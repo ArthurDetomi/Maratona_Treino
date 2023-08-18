@@ -53,12 +53,11 @@ bool solve(int linha, int coluna) {
     }
     for (char c = '1'; c <= '9'; c++) {
         if (eh_valido(linha, coluna, c)) {
-            char backup = mat[linha][coluna];
             mat[linha][coluna] = c;
             if (solve(linha, coluna + 1)) {
                 return true;
             }
-            mat[linha][coluna] = backup;
+            mat[linha][coluna] = '.';
         }
     }
     return false;
