@@ -42,12 +42,11 @@ bool eh_mesma_especie(dna d1, dna d2) {
             return false;
         }
     }
-    for (int i = 0; i < (int)d2.str.length(); i++) {
-        if (d1.qtd_por_letra(d2.str[i]) != d2.qtd_por_letra(d2.str[i])) {
-            return false;
-        }
-    }
     return true;
+}
+
+bool comp(dna d1, dna d2) {
+    return d1.str.size() < d2.str.size();
 }
 
 int main() {
@@ -61,19 +60,19 @@ int main() {
         vector<dna> V;
 
         string str;
-        
+
         for (int i = 0; i < N; i++) {
             cin >> str;
             dna d = dna(str);
             V.pb(d);
         }
 
-        int qtd = 0;
+        sort(V.begin(), V.end(), comp);
+
+        int qtd = 1;
         for (int i = 0; i < N - 1; i++) {
-            for (int j = i + 1; j < N; j++) {
-                if (!eh_mesma_especie(V[i], V[j])) {
-                    qtd++;
-                }
+            if (!eh_mesma_especie(V[i], V[i + 1])) {
+                qtd++;
             }
         }
 
