@@ -11,6 +11,8 @@ using namespace std;
 
 #define pb push_back
 
+#define mp make_pair
+
 int main() {
     fastio;
     return 0;
