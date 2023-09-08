@@ -13,6 +13,10 @@ using namespace std;
 
 #define mp make_pair
 
+#define f first
+
+#define s second
+
 int main() {
     fastio;
     return 0;
