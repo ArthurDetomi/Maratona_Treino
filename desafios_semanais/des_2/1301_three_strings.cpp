@@ -19,7 +19,6 @@ using namespace std;
 
 int t;
 
-
 bool eh_valido(char ai, char bi, char ci) {
     return (ai == bi && ci == ai) || (ai != bi && (ci == ai || ci == bi));
 }
@@ -28,13 +27,13 @@ int main() {
     fastio;
 
     cin >> t;
-    
+
     string a, b, c;
 
     while (t--) {
         cin >> a;
 
-        cin >> b; 
+        cin >> b;
 
         cin >> c;
 
@@ -49,9 +48,8 @@ int main() {
             }
         }
 
-        cout << (eh_possivel ? "YES\n":"NO\n");
+        cout << (eh_possivel ? "YES\n" : "NO\n");
     }
-
 
     return 0;
 }
