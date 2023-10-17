@@ -21,13 +21,15 @@ using namespace std;
 
 #define MAXN 1001
 
+#define INFINITO INT_MAX
+
 map<int, vector< pii > > grafo; 
 
 vector<int> distancia(MAXN, INFINITO);
 
-#define INFINITO INT_MAX
-
 int n, m, inicio = 0, fim;
+
+vector<bool> processado(MAXN, false);
 
 void dijskstra() {
     distancia[inicio] = 0;
@@ -38,7 +40,27 @@ void dijskstra() {
         int davez = -1;
 
         while (!fila.empty()) {
-            
+            int atual = fila.top().second;
+            fila.pop();
+
+            if (!processado[atual]) {
+                davez = atual;
+                break;
+            }
+        }
+
+        if (davez == -1) break;
+
+        processado[davez] = true;
+
+        for (int i = 0; i < (int) grafo[davez].size(); i++) {
+            int dist = grafo[davez][i].second;
+            int atual = grafo[davez][i].first;
+
+            if (distancia[atual] > distancia[davez] + dist) {
+                distancia[atual] = distancia[davez] + dist;
+                fila.push(mp(distancia[atual], atual));
+            }
         }
     }
 
@@ -55,6 +77,12 @@ int main() {
         cin >> vr >> viz >> peso;
         grafo[vr].pb(mp(viz, peso));
     }
+
+    fim = n + 1;
+
+    dijskstra();
+
+    cout << distancia[fim] << endl;
 
     return 0;
 }
