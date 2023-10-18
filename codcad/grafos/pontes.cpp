@@ -21,11 +21,9 @@ using namespace std;
 
 #define MAXN 1001
 
-#define INFINITO INT_MAX
-
 map<int, vector< pii > > grafo; 
 
-vector<int> distancia(MAXN, INFINITO);
+vector<int> distancia(MAXN, INT_MAX);
 
 int n, m, inicio = 0, fim;
 
@@ -34,7 +32,7 @@ vector<bool> processado(MAXN, false);
 void dijskstra() {
     distancia[inicio] = 0;
     priority_queue< pii, vector<pii>, greater<pii> > fila;
-    fila.push( mp(distancia[inicio], inicio));
+    fila.push(mp(distancia[inicio], inicio));
 
     while (true) {
         int davez = -1;
@@ -55,11 +53,11 @@ void dijskstra() {
 
         for (int i = 0; i < (int) grafo[davez].size(); i++) {
             int dist = grafo[davez][i].second;
-            int atual = grafo[davez][i].first;
+            int vizinho = grafo[davez][i].first;
 
-            if (distancia[atual] > distancia[davez] + dist) {
-                distancia[atual] = distancia[davez] + dist;
-                fila.push(mp(distancia[atual], atual));
+            if (distancia[vizinho] > distancia[davez] + dist) {
+                distancia[vizinho] = distancia[davez] + dist;
+                fila.push(mp(distancia[vizinho], vizinho));
             }
         }
     }
@@ -76,6 +74,7 @@ int main() {
     while (m--) {
         cin >> vr >> viz >> peso;
         grafo[vr].pb(mp(viz, peso));
+        grafo[viz].pb(mp(vr, peso));
     }
 
     fim = n + 1;
