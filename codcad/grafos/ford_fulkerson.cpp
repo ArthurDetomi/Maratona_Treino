@@ -13,8 +13,6 @@ vector<vector<int>> elementar_flow(MAX_VERTEXES, vector<int>(MAX_VERTEXES, 0));
 
 set<int> all_vertexes;
 
-int TAM;
-
 // Finaliza programa exibindo mensagem
 void finish_program() {
     cout << "Grafo inválido. Fim do Programa" << endl;
