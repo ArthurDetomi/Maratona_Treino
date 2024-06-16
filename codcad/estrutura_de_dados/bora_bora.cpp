@@ -25,7 +25,7 @@ int p, m, n;
 
 void realizar_jogada(vector<cardPair> &mao,
                      pair<int, pair<char, bool>> carta_davez,
-                     bool &eh_sentido_horario, deque<cardPair> &fila_saque,
+                     bool &eh_sentido_horario, stack<cardPair> &pilha_saque,
                      stack<pair<int, pair<char, bool>>> &pilha_descarte) {
     if (!carta_davez.second.second) {
         switch (carta_davez.first) {
@@ -39,11 +39,11 @@ void realizar_jogada(vector<cardPair> &mao,
 
             break;
         case 7: {
-            pair<int, char> carta_um = fila_saque.front();
-            fila_saque.pop_front();
+            pair<int, char> carta_um = pilha_saque.top();
+            pilha_saque.pop();
 
-            pair<int, char> carta_dois = fila_saque.front();
-            fila_saque.pop_front();
+            pair<int, char> carta_dois = pilha_saque.top();
+            pilha_saque.pop();
 
             mao.pb(carta_um);
             mao.pb(carta_dois);
@@ -56,8 +56,8 @@ void realizar_jogada(vector<cardPair> &mao,
             return; // passa a vez
         }
         case 1: {
-            pair<int, char> carta_um = fila_saque.front();
-            fila_saque.pop_front();
+            pair<int, char> carta_um = pilha_saque.top();
+            pilha_saque.pop();
 
             mao.pb(carta_um);
 
@@ -92,15 +92,14 @@ void realizar_jogada(vector<cardPair> &mao,
             pair<int, pair<char, bool>> carta_jogo =
                 mp(carta.first, mp(carta.second, false));
             pilha_descarte.push(carta_jogo);
-            fila_saque.push_back(carta);
             mao.erase(it);
             return;
         }
         it++;
     }
 
-    pair<int, char> carta_um = fila_saque.front();
-    fila_saque.pop_front();
+    pair<int, char> carta_um = pilha_saque.top();
+    pilha_saque.pop();
     mao.pb(carta_um);
 }
 
@@ -110,7 +109,7 @@ int main() {
     while (true) {
         vector<vector<cardPair>> mao(MAXP);
 
-        deque<cardPair> fila_saque;
+        stack<cardPair> pilha_saque;
 
         stack<pair<int, pair<char, bool>>> pilha_descarte;
 
@@ -132,20 +131,22 @@ int main() {
             }
         }
 
-        int qtd_restante = (n - 1) - (p * m);
+        int qtd_restante = n - (p * m);
 
-        cin >> x >> s;
-
-        pair<int, pair<char, bool>> carta_inicial = mp(x, mp(s, false));
-
-        pilha_descarte.push(carta_inicial);
 
         while (qtd_restante--) {
             cin >> x >> s;
 
-            fila_saque.push_front(mp(x, s));
+            pilha_saque.push(mp(x, s));
         }
 
+        cardPair carta_temp = pilha_saque.top();
+        pilha_saque.pop();
+
+        pair<int, pair<char, bool>> carta_inicial = mp(carta_temp.first, mp(carta_temp.second, false));
+        
+        pilha_descarte.push(carta_inicial);
+        
         int vencedor = 0;
 
         int proximo_jogar = 0;
@@ -157,7 +158,7 @@ int main() {
             pair<int, pair<char, bool>> carta_atual = pilha_descarte.top();
 
             realizar_jogada(mao[proximo_jogar], carta_atual, eh_sentido_horario,
-                            fila_saque, pilha_descarte);
+                            pilha_saque, pilha_descarte);
 
             if (mao[proximo_jogar].empty()) {
                 vencedor = proximo_jogar + 1;
