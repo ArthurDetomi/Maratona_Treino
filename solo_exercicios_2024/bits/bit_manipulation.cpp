@@ -77,6 +77,23 @@ int count_bits_hack(int n) {
   return ans;
 }
 
+// O(log n)
+int convertToBinary(int n) {
+  int ans = 0;
+  int p = 1;
+
+  while (n > 0) {
+    int last_bit = (n & 1);
+
+    ans += p * last_bit;
+
+    p = p * 10;
+    n = n >> 1;
+  }
+
+  return ans;
+}
+
 int main() {
   int n, i, j, m;
   /*
@@ -131,4 +148,7 @@ int main() {
 
   cout << "Quantidade de bits: " << countBits(n) << endl;
   cout << "Quantidade de bits hack: " << count_bits_hack(n) << endl;
+  cout << "Decimal para binário: " << convertToBinary(n) << endl;
+
+  return 0;
 }
