@@ -50,6 +50,33 @@ bool powerOfTwo(int n) {
   return false;
 }
 
+// O(log n)
+int countBits(int n) {
+  int count = 0;
+
+  while (n > 0) {
+    int last_bit = (n & 1);
+
+    count += last_bit;
+
+    n = n >> 1;
+  }
+
+  return count;
+}
+
+// O(qtd de bits 1 do número)
+int count_bits_hack(int n) {
+  int ans = 0;
+
+  while (n > 0) {
+    n = n & (n - 1);
+    ans++;
+  }
+
+  return ans;
+}
+
 int main() {
   int n, i, j, m;
   /*
@@ -90,7 +117,7 @@ int main() {
 
   cin >> n;
   cout << n << endl;
-  */
+
   cin >> n;
 
   if (powerOfTwo(n)) {
@@ -98,4 +125,10 @@ int main() {
   } else {
     cout << "Not is power of two\n";
   }
+  */
+
+  cin >> n;
+
+  cout << "Quantidade de bits: " << countBits(n) << endl;
+  cout << "Quantidade de bits hack: " << count_bits_hack(n) << endl;
 }
