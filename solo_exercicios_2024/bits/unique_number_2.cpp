@@ -32,16 +32,10 @@ vector<int> getTwoUniqueNumbersFromArray(const vector<int> arr) {
   return {setA, setB};
 }
 
-int main() {
-  vector<int> arr = {2, 3, 4, 5, 4, 3, 7, 2, 6, 6};
-
-  vector<int> res;
-
-  res = getTwoUniqueNumbersFromArray(arr);
-
-  int n = res.size();
+void printArray(const vector<int> arr) {
+  int n = arr.size();
   for (int i = 0; i < n; i++) {
-    int value = res[i];
+    int value = arr[i];
 
     if (i != n - 1) {
       printf("%d, ", value);
@@ -50,6 +44,16 @@ int main() {
     }
   }
   printf("\n");
+}
+
+int main() {
+  vector<int> arr = {2, 3, 4, 5, 4, 3, 7, 2, 6, 6};
+
+  vector<int> res;
+
+  res = getTwoUniqueNumbersFromArray(arr);
+
+  printArray(res);
 
   return 0;
 }
