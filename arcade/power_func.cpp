@@ -6,14 +6,14 @@
 
 using namespace std;
 
-int power_fn(int a, int n) {
+int power_fn(int a, int n) { // O(n)
   if (n == 0) {
     return 1;
   }
   return a * power_fn(a, n - 1);
 }
 
-int fast_power(int a, int n) {
+int fast_power(int a, int n) { // O(log n)
   if (n == 0) {
     return 1;
   }
