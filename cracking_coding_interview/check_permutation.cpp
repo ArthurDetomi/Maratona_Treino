@@ -4,6 +4,7 @@
 using namespace std;
 
 // Verify if s2 is permutation of s1
+// Complexity O(1) space O(n log n) time
 bool is_permutation(string s1, string s2) {
   if (s1.size() != s2.size()) {
     return false;
@@ -16,6 +17,7 @@ bool is_permutation(string s1, string s2) {
 }
 
 // Verify if s2 is permutation of s1 ASC2
+// Complexity O(n) time O(1) space
 bool is_permutation2(string s1, string s2) {
   if (s1.size() != s2.size()) {
     return false;
