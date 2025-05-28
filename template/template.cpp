@@ -2,11 +2,6 @@
 
 using namespace std;
 
-#define fastio                                                                 \
-    ios_base::sync_with_stdio(false);                                          \
-    cin.tie(0);                                                                \
-    cout.tie(0);
-
 #define endl '\n'
 
 #define pb push_back
@@ -18,6 +13,7 @@ using namespace std;
 #define s second
 
 int main() {
-    fastio;
-    return 0;
+  ios_base::sync_with_stdio(0);
+  cin.tie(0);
+  return 0;
 }
