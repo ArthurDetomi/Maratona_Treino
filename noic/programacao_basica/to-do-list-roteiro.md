@@ -21,3 +21,26 @@
 - [x] Basquete de Robôs
 - [x] Cartas
 - [x] A Idade de Dona Mônica
+
+# Loops
+- [x] Soma dos Elementos
+- [x] Prêmio do Milhão
+- [x] Lâmpadas
+- [x] Garçom
+- [x] Código (OBI 2015)
+- [x] Consecutivos
+- [x] Fatorial
+- [x] Valores Entre Dois Números
+- [x] Primo
+- [x] Xadrez
+- [x] Senha 2018
+- [x] Desafio do Maior Número
+- [x] Chocolate (OBI 2007)
+
+# Vetores
+
+# Matriz
+
+# Ordenação
+
+# Explorando a STL
