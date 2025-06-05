@@ -46,9 +46,9 @@
 - [x] Dois Vetores: Pares e Ímpares
 - [x] Lançamento de Dados
 - [x] Zero para Cancelar
-- [ ] Mesa Redonda
-- [ ] Loteria
-- [ ] Pulo do Sapo
+- [x] Mesa Redonda
+- [x] Loteria
+- [x] Pulo do Sapo
 - [ ] Caranava
 - [ ] Split
 - [x] Fita Colorida
