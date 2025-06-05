@@ -1,4 +1,5 @@
 # Começando do zero
+
 - [x] Olá Neps Academy
 - [x] Média Inteira
 - [x] Divisão do Tesouro
@@ -7,6 +8,7 @@
 - [x] Média e mediana
 
 # Estruturas condicionais
+
 - [x] Flíper
 - [x] Positivo, Negativo ou Nulo
 - [x] Bondinho
@@ -23,6 +25,7 @@
 - [x] A Idade de Dona Mônica
 
 # Loops
+
 - [x] Soma dos Elementos
 - [x] Prêmio do Milhão
 - [x] Lâmpadas
@@ -38,6 +41,18 @@
 - [x] Chocolate (OBI 2007)
 
 # Vetores
+
+- [x] Álbum da Copa
+- [x] Dois Vetores: Pares e Ímpares
+- [x] Lançamento de Dados
+- [x] Zero para Cancelar
+- [ ] Mesa Redonda
+- [ ] Loteria
+- [ ] Pulo do Sapo
+- [ ] Caranava
+- [ ] Split
+- [x] Fita Colorida
+- [ ] Botas Trocadas
 
 # Matriz
 
