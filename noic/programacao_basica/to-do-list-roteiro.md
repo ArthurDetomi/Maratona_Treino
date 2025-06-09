@@ -56,11 +56,11 @@
 
 # Matriz
 
-- [ ] Fácil: Substituir o Maior em Matriz 3x3
+- [x] Fácil: Substituir o Maior em Matriz 3x3
 - [x] Fácil: Coluna na Matriz
-- [ ] Fácil: Quadrado Mágico 3x3
-- [ ] Médio: Acima da Diagonal Principal
-- [ ] Médio: Abaixo da Diagonal Secundária
+- [x] Fácil: Quadrado Mágico 3x3
+- [x] Médio: Acima da Diagonal Principal
+- [x] Médio: Abaixo da Diagonal Secundária
 - [ ] Médio: Área Direita
 - [ ] Difícil: O Mar não está para Peixe
 - [x] Difícil: Torre
