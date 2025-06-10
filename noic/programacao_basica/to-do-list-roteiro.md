@@ -61,10 +61,21 @@
 - [x] Fácil: Quadrado Mágico 3x3
 - [x] Médio: Acima da Diagonal Principal
 - [x] Médio: Abaixo da Diagonal Secundária
-- [ ] Médio: Área Direita
-- [ ] Difícil: O Mar não está para Peixe
+- [x] Médio: Área Direita
+- [x] Difícil: O Mar não está para Peixe
 - [x] Difícil: Torre
 
 # Ordenação
+
+- [ ] Ordenação por Tamanho
+- [ ] Fila do Recreio
+- [ ] Spurs Rocks
+- [ ] Altura
+- [ ] O Elfo das Trevas
+- [ ] Organizador de Vagões
+- [ ] Camisetas
+- [ ] Olimpíadas (OBI P1 fase 2 - 2009)
+- [ ] P-Networks
+- [ ] Balé
 
 # Explorando a STL
