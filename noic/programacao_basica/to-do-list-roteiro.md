@@ -67,8 +67,8 @@
 
 # Ordenação
 
-- [ ] Ordenação por Tamanho
-- [ ] Fila do Recreio
+- [x] Ordenação por Tamanho
+- [x] Fila do Recreio
 - [ ] Spurs Rocks
 - [ ] Altura
 - [ ] O Elfo das Trevas
