@@ -65,6 +65,13 @@
 - [x] Difícil: O Mar não está para Peixe
 - [x] Difícil: Torre
 
+# Funções
+
+- [x] Problema 2 - F91
+- [x] Problema 3 - Fibonacci, Quantas Chamadass?
+- [x] Problema 4 - Fatorial
+- [x] Problema 6 - Investindo no Mercado de Ações 1
+
 # Ordenação
 
 - [x] Ordenação por Tamanho
