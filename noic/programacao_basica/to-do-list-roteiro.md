@@ -76,8 +76,8 @@
 
 - [x] Ordenação por Tamanho
 - [x] Fila do Recreio
-- [ ] Spurs Rocks
-- [ ] Altura
+- [x] Spurs Rocks
+- [x] Altura
 - [ ] O Elfo das Trevas
 - [ ] Organizador de Vagões
 - [ ] Camisetas
