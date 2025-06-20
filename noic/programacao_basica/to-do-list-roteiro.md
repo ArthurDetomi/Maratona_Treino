@@ -78,7 +78,7 @@
 - [x] Fila do Recreio
 - [x] Spurs Rocks
 - [x] Altura
-- [ ] O Elfo das Trevas
+- [x] O Elfo das Trevas
 - [ ] Organizador de Vagões
 - [ ] Camisetas
 - [ ] Olimpíadas (OBI P1 fase 2 - 2009)
