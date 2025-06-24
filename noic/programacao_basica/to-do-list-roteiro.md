@@ -79,10 +79,8 @@
 - [x] Spurs Rocks
 - [x] Altura
 - [x] O Elfo das Trevas
-- [ ] Organizador de Vagões
-- [ ] Camisetas
-- [ ] Olimpíadas (OBI P1 fase 2 - 2009)
+- [x] Organizador de Vagões
+- [x] Camisetas
 - [ ] P-Networks
-- [ ] Balé
 
 # Explorando a STL
