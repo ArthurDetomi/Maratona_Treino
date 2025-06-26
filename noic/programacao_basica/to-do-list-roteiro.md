@@ -88,6 +88,6 @@
 ## Vector
 
 - [x] Problema 1 - Fila
-- [ ] Problema 2 - Escada Rolante
+- [x] Problema 2 - Escada Rolante
 - [x] Problema 3 - Zero para Cancelar
 - [ ] Problema 4 - Lista de Chamada
