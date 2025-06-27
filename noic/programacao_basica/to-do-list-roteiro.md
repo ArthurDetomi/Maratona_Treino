@@ -90,4 +90,10 @@
 - [x] Problema 1 - Fila
 - [x] Problema 2 - Escada Rolante
 - [x] Problema 3 - Zero para Cancelar
-- [ ] Problema 4 - Lista de Chamada
+- [x] Problema 4 - Lista de Chamada
+
+## Pair
+
+- [x] Problema 1 – Times
+- [ ] Problema 2 – Sorvete
+- [ ] Problema 3 – Detectando Colisões
