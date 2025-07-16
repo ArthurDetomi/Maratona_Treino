@@ -95,5 +95,11 @@
 ## Pair
 
 - [x] Problema 1 – Times
-- [ ] Problema 2 – Sorvete
-- [ ] Problema 3 – Detectando Colisões
+- [x] Problema 2 – Sorvete
+- [x] Problema 3 – Detectando Colisões
+
+## Stack
+
+- [x] Expressões
+- [ ] Chaves
+- [x] Zero para cancelar
