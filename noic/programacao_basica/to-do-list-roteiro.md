@@ -101,5 +101,25 @@
 ## Stack
 
 - [x] Expressões
-- [ ] Chaves
 - [x] Zero para cancelar
+
+# Queue
+
+- [ ] Copa do mundo
+
+# Set
+
+- [ ] Problema 1 – Frequência na Aula
+- [ ] Problema 2 – Número Proibido
+- [ ] Problema 3 – Redundancy
+- [ ] Problema 4 – Lista de Chamada
+
+# Map
+
+- [ ] Problema 1 – Lecture
+- [ ] Problema 2 – Inscrições
+- [ ] Problema 3 – Times
+
+# Priority_Queue
+
+- [ ] Telemarketing
