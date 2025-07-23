@@ -105,14 +105,13 @@
 
 # Queue
 
-- [ ] Copa do mundo
+- [x] Copa do mundo
 
 # Set
 
-- [ ] Problema 1 – Frequência na Aula
-- [ ] Problema 2 – Número Proibido
-- [ ] Problema 3 – Redundancy
-- [ ] Problema 4 – Lista de Chamada
+- [x] Problema 1 – Frequência na Aula
+- [x] Problema 2 – Número Proibido
+- [x] Problema 4 – Lista de Chamada
 
 # Map
 
