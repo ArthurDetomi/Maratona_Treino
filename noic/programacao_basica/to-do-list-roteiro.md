@@ -115,8 +115,8 @@
 
 # Map
 
-- [ ] Problema 1 – Lecture
-- [ ] Problema 2 – Inscrições
+- [x] Problema 1 – Lecture
+- [x] Problema 2 – Inscrições
 - [ ] Problema 3 – Times
 
 # Priority_Queue
